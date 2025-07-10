@@ -44,6 +44,10 @@ huggingface-cli login
 
 ## Usage
 
+## Colab notebook
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1K4q9zutbt8TCLST1DoQjci5dQniFP05a?usp=sharing)
+
 ### Installation
 
 You can use the [SLAKE dataset](https://huggingface.co/datasets/Voxel51/SLAKE) as a running example. This is how to download it from the Hugging Face hub:
@@ -120,7 +124,7 @@ import fiftyone.brain as fob
 # Build a similarity index
 text_img_index = fob.compute_similarity(
     dataset,
-    model=model,
+    model="google/medsiglip-448",
     brain_key="medsiglip_similarity",
 )
 
