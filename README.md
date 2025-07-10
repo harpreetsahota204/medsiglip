@@ -46,7 +46,22 @@ huggingface-cli login
 
 ### Installation
 
-Register and download the model from this repository:
+You can use the [SLAKE dataset](https://huggingface.co/datasets/Voxel51/SLAKE) as a running example. This is how to download it from the Hugging Face hub:
+
+```python
+import fiftyone as fo
+
+from fiftyone.utils.huggingface import load_from_hub
+
+dataset = load_from_hub(
+    "Voxel51/SLAKE",
+    name="SLAKE",
+    overwrite=True,
+    max_samples=10
+    )
+```
+
+Next, you need to register and download the model:
 
 ```python
 import fiftyone.zoo as foz
