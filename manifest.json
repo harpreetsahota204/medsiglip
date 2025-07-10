@@ -4,7 +4,7 @@
     "models": [
         {
             "base_name": "google/medsiglip-448",
-            "base_filename":"google/medsiglip-448",
+            "base_filename":"medsiglip-448",
             "author": "Google",
             "license": "health-ai-developer-foundations",
             "source": "https://huggingface.co/google/medsiglip-448",
