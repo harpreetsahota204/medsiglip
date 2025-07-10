@@ -1,0 +1,32 @@
+{
+    "name": "medsiglip",
+    "url": "https://github.com/harpreetsahota204/medsiglip",
+    "models": [
+        {
+            "base_name": "google/medsiglip-448",
+            "base_filename":"google/medsiglip-448",
+            "author": "Google",
+            "license": "health-ai-developer-foundations",
+            "source": "https://huggingface.co/google/medsiglip-448",
+            "description": "MedSigLIP is a variant of SigLIP that is trained to encode medical images and text into a common embedding space.",
+            "tags": [
+                "classification",
+                "logits",
+                "embeddings",
+                "torch",
+                "clip",
+                "zero-shot"
+            ],
+            "date_added": "2022-07-10",
+            "requirements": {
+                "packages": ["huggingface-hub","transformers", "torch", "torchvision",  "accelerate"],
+                "cpu": {
+                    "support": true
+                },
+                "gpu": {
+                    "support": true
+                }
+            }
+        }
+   ]
+}
