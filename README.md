@@ -130,6 +130,7 @@ text_img_index = fob.compute_similarity(
     dataset,
     model=m"google/medsiglip-448",
     brain_key="medsiglip_similarity",
+    embeddings="medsiglip_embeddings"
 )
 
 # Search by text query
