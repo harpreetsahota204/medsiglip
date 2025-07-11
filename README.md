@@ -44,7 +44,14 @@ huggingface-cli login
 
 ## Usage
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/harpreetsahota204/medsiglip/blob/main/using_medsiglip_model.ipynb)
+
 ### Installation
+
+
+Install the requirements: `pip install fiftyone huggingface-hub accelerate sentencepiece protobuf`
+
+### Download a sample dataset
 
 You can use the [SLAKE dataset](https://huggingface.co/datasets/Voxel51/SLAKE) as a running example. This is how to download it from the Hugging Face hub:
 
@@ -121,7 +128,7 @@ import fiftyone.brain as fob
 # Build a similarity index
 text_img_index = fob.compute_similarity(
     dataset,
-    model=model,
+    model=m"google/medsiglip-448",
     brain_key="medsiglip_similarity",
 )
 
