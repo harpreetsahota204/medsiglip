@@ -70,6 +70,7 @@ import fiftyone.zoo as foz
 foz.register_zoo_model_source("https://github.com/harpreetsahota204/medsiglip")
 
 # Download your preferred SigLIP2 variant
+# Note that you will need to acknowledge the license if you haven't yet of MedSiglip on HuggingFace if you haven't yet
 foz.download_zoo_model(
     "https://github.com/harpreetsahota204/medsiglip",
     model_name="google/medsiglip-448",
