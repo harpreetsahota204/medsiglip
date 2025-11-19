@@ -1,5 +1,7 @@
 # MedSigLIP in FiftyOne
 
+![image](medsiglip.gif)
+
 **MedSigLIP** is a large-scale medical vision-language model developed by Google Health. It is designed to encode medical images and associated text into a shared embedding space, enabling advanced applications in healthcare AI.
 
 This repository provides a FiftyOne integration for Google's MedSigLIP embedding models, enabling powerful text-image similarity search capabilities in your FiftyOne datasets.
